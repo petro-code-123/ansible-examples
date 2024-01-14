@@ -1,2 +1,14 @@
 # ansible-examples
-Ansible playbook examples
+Примеры ansible playbook 
+
+1. Playbook "postgresql" написан для автоматического развертывания СУБД postgresql.
+   Он включает в себя:
+     - добавление репозитория postgresql для операционной системы Debian 12 Bookworm
+     - установка СУБД postgresql
+     - созданием отдельного юнита systemd с параметрами, заданными в playbook:
+         
+     - задание изначальных настроек:
+         a) тип подключения
+         b) порт подключения
+         c) способ аутентификации
+         d) расположение базы данных
